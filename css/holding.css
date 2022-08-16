@@ -88,6 +88,9 @@ footer {
   font-size: 20px;
 }
 
+a,
+a:hover,
+a:active,
 a:visited {
   color: white;
 }
