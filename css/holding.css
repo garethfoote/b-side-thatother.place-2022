@@ -1,0 +1,118 @@
+@font-face {
+  font-family: "bodoni_48ptitalic";
+  src: url("../fonts/bodoni-48-book-italic-webfont.woff2") format("woff2"),
+    url("../fonts/bodoni-48-book-italic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "bodoni_48ptregular";
+  src: url("../fonts/bodoni-48-book-webfont.woff2") format("woff2"),
+    url("../fonts/bodoni-48-book-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "bodoni_96ptitalic";
+  src: url("../fonts/bodoni-96-book-italic-webfont.woff2") format("woff2"),
+    url("bodoni-96-book-italic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "bodoni_96ptregular";
+  src: url("../fonts/bodoni-96-book-webfont.woff2") format("woff2"),
+    url("../fonts/bodoni-96-book-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+}
+
+figure {
+  width: 100%;
+}
+
+/* @1920 ~= 125px (125/19.2=6.5) */
+blockquote {
+  margin: 0;
+  padding: 0;
+  font-family: "bodoni_96ptitalic";
+  font-size: 40px;
+  margin-bottom: 30px;
+  line-height: 1.25;
+}
+
+/* @1920 ~= 100px  (100/19.2=5.2)=*/
+figcaption {
+  font-family: "bodoni_96ptregular";
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+figcaption cite {
+  font-family: "bodoni_96ptitalic";
+  font-style: normal;
+}
+
+/* @1920 ~= 40px (40/19.2=2.08)= */
+figure > cite {
+  font-size: 25px;
+  font-style: normal;
+  line-height: 1.25;
+}
+
+figure > cite {
+  font-family: "bodoni_96ptregular";
+}
+
+@media (min-width: 615px) {
+  blockquote {
+    font-size: 6.5vw;
+    margin-bottom: 40px;
+  }
+}
+
+/* 30px/5.2vwx100)=576 */
+@media (min-width: 576px) {
+  figcaption {
+    font-size: 5.2vw;
+    margin-bottom: 40px;
+  }
+}
+
+/* 25px/2.08vwx100)=1200 */
+@media (min-width: 1200px) {
+  figure > cite {
+    font-size: 2.08vw;
+  }
+}
+
+@media (min-width: 1920px) {
+  blockquote {
+    max-width: 1720px;
+    margin: 0 auto 60px;
+    font-size: 110px;
+  }
+  figcaption {
+    font-size: 5.2vw;
+    margin: 0 auto 60px;
+    font-size: 80px;
+  }
+  figure > cite {
+    font-size: 2.08vw;
+    font-size: 30px;
+  }
+}
