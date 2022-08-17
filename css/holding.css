@@ -1,4 +1,36 @@
 @font-face {
+  font-family: "bodoni_16ptitalic";
+  src: url("../fonts/bodoni-16-book-italic-webfont.woff2") format("woff2"),
+    url("../fonts/bodoni-16-book-italic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "bodoni_16ptregular";
+  src: url("../fonts/bodoni-16-book-webfont.woff2") format("woff2"),
+    url("../fonts/bodoni-16-book-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "bodoni_24ptitalic";
+  src: url("../fonts/bodoni-24-book-italic-webfont.woff2") format("woff2"),
+    url("../fonts/bodoni-24-book-italic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "bodoni_24ptregular";
+  src: url("../fonts/bodoni-24-book-webfont.woff2") format("woff2"),
+    url("../fonts/bodoni-24-book-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: "bodoni_48ptitalic";
   src: url("../fonts/bodoni-48-book-italic-webfont.woff2") format("woff2"),
     url("../fonts/bodoni-48-book-italic-webfont.woff") format("woff");
@@ -29,6 +61,7 @@
   font-weight: normal;
   font-style: normal;
 }
+
 html {
   height: 100%;
 }
@@ -40,52 +73,55 @@ body {
   background: black;
   color: white;
   height: 100%;
+}
+
+.content {
+  min-height: calc(100vh - 110px);
   display: flex;
+}
+
+footer {
+  font-family: "bodoni_16ptregular";
+  width: 100%;
+  height: 40px;
+  line-height: 1.25;
+  font-size: 15px;
 }
 
 figure {
   width: 100%;
-  margin-top: 15vh;
+  margin: 30px 0 0 0;
+  padding: 0 30px;
 }
 
 blockquote {
   margin: 0;
   padding: 0;
-  font-family: "bodoni_96ptitalic";
-  font-size: 40px;
-  margin-bottom: 30px;
+  font-family: "bodoni_24ptitalic";
+  font-size: 25px;
+  margin: 30px 0 30px;
   line-height: 1.25;
 }
 
 figcaption {
-  font-family: "bodoni_96ptregular";
-  font-size: 30px;
+  font-family: "bodoni_16ptregular";
+  font-size: 23px;
   margin-bottom: 30px;
 }
 
-figcaption cite {
-  font-family: "bodoni_96ptitalic";
-  font-style: normal;
-}
-
 figure > cite {
-  font-size: 25px;
+  font-size: 15px;
   font-style: normal;
   line-height: 1.25;
 }
 
-figure > cite {
-  font-family: "bodoni_96ptregular";
+figcaption cite {
+  font-family: "bodoni_16ptitalic";
+  font-style: normal;
 }
 
-footer {
-  font-family: "bodoni_48ptregular";
-  position: absolute;
-  bottom: 30px;
-  width: 100%;
-  height: 40px;
-  line-height: 30px;
-  font-size: 20px;
+figure > cite {
+  font-family: "bodoni_16ptregular";
 }
 
 a,
@@ -93,6 +129,28 @@ a:hover,
 a:active,
 a:visited {
   color: white;
+}
+
+@media (min-width: 480px) {
+  blockquote {
+    font-size: 40px;
+  }
+  figcaption {
+    font-size: 30px;
+  }
+  figure > cite {
+    font-size: 25px;
+  }
+  figure {
+    padding: 0 60px;
+  }
+}
+
+@media (min-width: 480px) {
+  footer {
+    font-size: 20px;
+    font-family: "bodoni_24ptregular";
+  }
 }
 
 /* 40px/5.73vwx100)=698 */
@@ -105,8 +163,9 @@ a:visited {
     margin-top: 0;
   }
   blockquote {
+    font-family: "bodoni_48ptitalic";
     font-size: 5.73vw;
-    margin-bottom: 60px;
+    margin: 60px 0 60px;
   }
 }
 
@@ -116,9 +175,6 @@ a:visited {
   figcaption {
     font-size: 4.2vw;
     margin-bottom: 60px;
-  }
-  footer {
-    bottom: 0;
   }
 }
 
@@ -133,16 +189,22 @@ a:visited {
 
 @media (min-width: 1920px) {
   blockquote {
+    font-family: "bodoni_96ptitalic";
     max-width: 1720px;
-    margin: 0 auto 60px;
+    margin: 60px auto 60px;
     font-size: 110px;
   }
   figcaption {
+    font-family: "bodoni_48ptregular";
     font-size: 5.2vw;
     margin: 0 auto 60px;
     font-size: 80px;
   }
+  figcaption > cite {
+    font-family: "bodoni_48ptitalic";
+  }
   figure > cite {
+    font-family: "bodoni_24ptregular";
     font-size: 2.08vw;
     font-size: 30px;
     margin: 0 auto 60px;
