@@ -177,7 +177,7 @@ a:visited {
   }
   blockquote {
     font-family: "bodoni_48ptitalic";
-    font-size: 3.73vw;
+    font-size: 5.73vw;
     padding: 0;
   }
 }
@@ -186,7 +186,7 @@ a:visited {
 /* @1920 ~= 80px  (80/19.2=4.2)=*/
 @media (min-width: 714px) {
   figcaption {
-    font-size: 3.2vw;
+    font-size: 4.2vw;
   }
   figure > cite {
     font-size: 2vw;
@@ -203,7 +203,6 @@ a:visited {
   }
   figcaption {
     font-family: "bodoni_48ptregular";
-    font-size: 5.2vw;
     margin: 0 auto 60px;
     font-size: 80px;
   }
@@ -212,7 +211,6 @@ a:visited {
   }
   figure > cite {
     font-family: "bodoni_24ptregular";
-    font-size: 2.08vw;
     font-size: 30px;
     margin: 0 auto 60px;
   }
