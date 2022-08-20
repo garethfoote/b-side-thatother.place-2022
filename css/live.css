@@ -1,0 +1,38 @@
+html {
+  overflow: auto;
+}
+
+html,
+body,
+div,
+iframe {
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+  border: none;
+}
+
+body {
+  background: #000;
+}
+
+iframe {
+  display: block;
+  width: 100%;
+  border: none;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.content {
+  position: relative;
+  height: 100%;
+}
+
+footer {
+  font-family: "bodoni_16ptregular";
+  width: 100%;
+  line-height: 1.25;
+  font-size: 15px;
+  padding: 20px 0 20px 0;
+}
