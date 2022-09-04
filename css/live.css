@@ -4,7 +4,6 @@ html {
 
 html,
 body,
-div,
 iframe {
   margin: 0px;
   padding: 0px;
@@ -13,8 +12,16 @@ iframe {
 }
 
 body {
-  background: #000;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
 }
+
+
+.content {
+  flex: 1 0 auto;
+}
+
 
 iframe {
   display: block;
@@ -29,10 +36,14 @@ iframe {
   height: 100%;
 }
 
-footer {
-  font-family: "bodoni_16ptregular";
-  width: 100%;
-  line-height: 1.25;
-  font-size: 15px;
-  padding: 20px 0 20px 0;
+
+.credit {
+  flex-shrink: 0;
+  margin: 0 auto;
+  text-align: center;
+  color: #969696;
+  padding: 8px;
+  max-width: 600px;
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
 }
